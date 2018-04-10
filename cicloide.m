@@ -40,6 +40,8 @@ for i = 1:1:n
     plot(x1, y1 + 1, 'k');
     plot(x2-t(i)-2*pi, y2, 'k');
     plot(x2-t(i)-4*pi, y2, 'k');
+    set(gca, 'xticklabel', []);
+    set(gca, 'yticklabel', []);
     axis([-10 5 0 2]);
     pbaspect([15 2 1]);
     hold off;
